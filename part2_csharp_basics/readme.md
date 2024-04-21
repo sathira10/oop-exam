@@ -33,7 +33,7 @@
 
     `float f = 3.14F;`
 
-    `double f = 3.14F;`
+    `double d = 3.14;`
 
 * **Char** - char type can contain a single Unicode character inside  single quotes.
 
@@ -159,7 +159,7 @@ bool b = (true && false); // logical and (false)
 ```
 
 ### Operator Precedents
-1. increment, decrement(`++` `--`), not (`!`)
+1. increment, decrement, not (`++` `--` `!`)
 2. multiplication, division, modulus (`*` `/` `%`)
 3. addition, subtraction (`+` `-`)
 4. comparisons (`<` `<=` `>` `>=`)
@@ -207,7 +207,10 @@ string s = $"{s1} {s2}"; // Hello World
 
 To add new lines into the string itself, the escape character (\n) is used. This backslash notation is used to write special characters
 
-`myString = "Hello\nWorld";`
+```c#
+myString = "Hello\nWorld";
+// This gets printed in 2 lines
+```
 
 Common escape characters
 * `\n` newline
@@ -234,7 +237,9 @@ Note that there are no methods for changing a string. Methods that appear to mod
 
 ## Arrays
 
-An array is a data structure used for storing a collection of values that all have the same data type. Length of an array cannot be modified.
+An array is a data structure used for storing a collection of values that all have the same data type. 
+
+Length of an array cannot be modified. (size is static)
 
 ```c#
 int[] x; // integer array

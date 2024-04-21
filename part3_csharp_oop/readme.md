@@ -5,9 +5,12 @@
 
 ## Objects and Classes
 
-A class is a template used to create objects.
-They are made up of members, the main two of which are fields and methods. 
-* **Fields** are variables that hold the state of the object
+* A class is a template used to create objects.
+* A class allows the definition of a custom type
+* An Object is a "variable" of that custom type
+
+Classes are made up of two types of members:
+* **Attributes** are variables that hold the state of the object
 * **Methods** define what the object can do
 
 ```c#
@@ -75,7 +78,7 @@ class Rectangle
 }
 ```
 
-It is possible to create a class even if no constructors are defined. This is because the compiler will automatically add a default parameterless constructor to such a class. 
+It is possible to create a class even if no constructors are defined. This is because the compiler will automatically add a default parameter-less constructor to such a class. 
 
 The default constructor will instantiate the object and set each field to its default value.
 
@@ -119,12 +122,113 @@ class Rectangle
 }
 ```
 
+## Access Levels
+
+Every class member has an accessibility level that determines where the member will be visible. 
+* public
+* protected
+* internal
+* private
+
+When selecting an access level, it is generally best to use the most restrictive level possible. Object attributes are private by default.
+
+### Private Access
+Accessible in the class in which they are declared, the defining class.
+
+### Protected Access
+A protected member can be accessed from within a derived class, but it is inaccessible from any other classes.
+
+### Internal Access
+An internal member can be accessed anywhere within the local assembly, but not from another assembly. An assembly is the compilation unit of a .NET project, either an executable program (.exe) or a library (.dll).
+
+### Public Access
+The public modifier gives unrestricted access from anywhere that a member can be referenced.
+
+
+## Get and Set Methods
+
+Private attributes that need to be accessed externally typically have associated Get and Set methods
+
+```c#
+class Time {
+  private int seconds;
+  
+  // Get method
+  public int getSeconds() { return seconds; }
+
+  // Set method
+  public void setSeconds (int seconds) 
+  { 
+    this.seconds = seconds; 
+  }
+}
+```
+
+C# also supports an additional way to define attributes with associated Get and Set methods using **Properties**
+
+```c#
+class Time {
+  private int sec;
+  public int Seconds
+  {
+    get { return sec; }
+    set { sec = value; }
+  }
+}
+```
+
+Note that the contextual `value` keyword corresponds to the value assigned to the property.
+
+
+## Static
+
+* The static keyword can be used to declare fields and methods that can
+be accessed without having to create an instance of the class. 
+
+* Static (class) members only exist in one copy, which belongs to the class itself
+
+* Non-static (instance) members are created as new copies for each new object
+
+
+### Static Attributes
+* A static attribute of a class is shared by all the instances of that class
+* It exists regardless of objects of that class being instantiated
+* It is located in a special section of the heap associated to that class
+* A public static attribute can be accessed directly using: `ClassName.AttributeName`
+
+
+### Static Methods
+* Static methods are attached to a class and do not operate on any of the instance variables (attributes)
+* They can be called without an object instance created first
+* Hence they can only refer to other static members (attributes and methods) of the same class
+
+```c#
+class Circle
+{
+  // Instance variable (one per object)
+  public float r = 10F;
+  
+  // Static/class variable (only one instance)
+  public static float pi = 3.14F;
+
+  // Instance method
+  public float GetArea()
+  {
+    return ComputeArea(r);
+  }
+  // Static/class method
+  public static float ComputeArea(float a)
+    {
+    return pi * a * a;
+  } 
+}
+```
+
 ## Inheritance
 
 Inheritance allows a class to acquire the members of another class.
 
 ```c#
-
 // Base class (parent class)
 class Rectangle
 {
@@ -140,13 +244,6 @@ A class in C# may only inherit from one base class. If no base class is specifie
 
 ### Downcast and Upcast
 
-
-
-## Redefining Members
-
-## Access Levels
-
-## Static
 
 ## Interfaces
 
