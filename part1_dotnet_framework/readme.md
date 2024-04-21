@@ -28,7 +28,7 @@ The .NET framework takes managed code a step further
 
 ## C# Program Structure
 
-```C#
+```c#
 class Program
 {
     static void Main(string[] args)

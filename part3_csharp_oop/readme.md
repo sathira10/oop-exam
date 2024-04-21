@@ -10,7 +10,7 @@ They are made up of members, the main two of which are fields and methods.
 * **Fields** are variables that hold the state of the object
 * **Methods** define what the object can do
 
-```C#
+```c#
 class Rectangle
 {
   int x, y;
@@ -22,7 +22,7 @@ class Rectangle
 
 Use the new keyword to create objects
 
-```C#
+```c#
 class MyApp {
   static void Main()
   {
@@ -39,7 +39,7 @@ class MyApp {
 
 A dot (.) is used after the object’s name to reference its accessible members.
 
-```C#
+```c#
 class Rectangle
 {
   // Make members accessible for instances of the class
@@ -48,7 +48,7 @@ class Rectangle
 }
 ```
 
-```C#
+```c#
 static void Main()
 {
   Rectangle r = new Rectangle();
@@ -63,7 +63,7 @@ static void Main()
 This is a special kind of method used to instantiate (construct) the object. It always has the same name as the class and does not have a return type
 
 
-```C#
+```c#
 class Rectangle
 {
   public int x, y;
@@ -83,7 +83,7 @@ The default constructor will instantiate the object and set each field to its de
 
 This keyword is a reference to the current instance of the class. Can be used inside the constructor or other methods.
 
-```C#
+```c#
 class Rectangle
 {
   public int x, y;
@@ -98,7 +98,7 @@ class Rectangle
 ### Constructor Overloading
 Constructor can be overloaded like any other method
 
-```C#
+```c#
 class Rectangle
 {
   public int x, y;
@@ -110,7 +110,7 @@ class Rectangle
 
 Constructors can use other constructors too. This is known as constructor chaining.
 
-```C#
+```c#
 class Rectangle
 {
   public int x, y;
@@ -123,7 +123,7 @@ class Rectangle
 
 Inheritance allows a class to acquire the members of another class.
 
-```C#
+```c#
 
 // Base class (parent class)
 class Rectangle

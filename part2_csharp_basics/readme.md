@@ -55,7 +55,7 @@ Happens automatically when one data type is assigned to another data type that i
 
 If we try the opposite we get a **Compile error**
 
- ```C#
+ ```c#
 double a = 2; // a = 2.0
 int a = 18.7; // ERROR
 ```
@@ -63,7 +63,7 @@ int a = 18.7; // ERROR
 
 Before performing calculations, C# promotes values of types with a narrower range into the larger one (promotion).
 
-```C#
+```c#
 int num = 10;
 int den = 4;
 int result = num / den;
@@ -88,12 +88,12 @@ int a = (int)18.7; // a = 18
 
 We can also use the `Convert` class for this
 
-```C#
+```c#
 string s = "123";
 int i = Convert.ToInt32(s); 
 ```
 This is specially useful with Console input
-```C#
+```c#
 string userInput = Console.ReadLine();
 int numericValue = Convert.ToInt32(userInput);
 ```
@@ -102,7 +102,7 @@ int numericValue = Convert.ToInt32(userInput);
 
 ### Arithmetic Operators
 
-```C#
+```c#
 float x = 3 + 2; // addition (5)
       x = 3 - 2; // subtraction (1)
       x = 3 * 2; // multiplication (6)
@@ -112,7 +112,7 @@ float x = 3 + 2; // addition (5)
 
 ### Assignment Operators
 
-```C#
+```c#
 int i = 0; // assignment
 
 i += 5; // i = i+5;
@@ -124,7 +124,7 @@ i %= 5; // i = i%5;
 
 ### Increment and Decrement Operators
 
-```C#
+```c#
 x++; // post-increment
 x--; // post-decrement
 ++x; // pre-increment
@@ -133,7 +133,7 @@ x--; // post-decrement
 
 The post-operator returns the original value before it changes the variable, while the pre-operator changes the variable first and then returns the value. See the following example.
 
-```C#
+```c#
 int x, y;
 x = 5; y = x++; // y=5, x=6
 x = 5; y = ++x; // y=6, x=6
@@ -141,7 +141,7 @@ x = 5; y = ++x; // y=6, x=6
 
 ### Comparison Operators
 
-```C#
+```c#
 bool b = (2 == 3); // equal to (false)
      b = (2 != 3); // not equal to (true)
      b = (2 > 3);  // greater than (false)
@@ -152,7 +152,7 @@ bool b = (2 == 3); // equal to (false)
 
 ### Logical Operators
 
-```C#
+```c#
 bool b = (true && false); // logical and (false)
      b = (true || false); // logical or (true)
      b = !(true);         // logical not (false)
@@ -178,7 +178,7 @@ The string data type is used to store string constants. They are delimited by do
 
 The concatenation operator (+) can combine strings together. When one of the operands is not of a string type, they will be implicitly be converted to a string
 
-```C#
+```c#
 string a = "Hello";
 string b = a + " World"; // Hello World
 a += " World"; // Hello World
@@ -188,7 +188,7 @@ string c = i + " is " + 1; // 1 is 1
 ```
 we can also use the `ToString` method
 
-```C#
+```c#
 int i = 1;
 string d = i.ToString() + " is " + 1.ToString(); // 1 is 1
 ```
@@ -197,7 +197,7 @@ Another way to compile strings is to use **String Interpolation**
 
 To perform string interpolation, a dollar sign ($) is placed before the string.
 
-```C#
+```c#
 string s1 = "Hello";
 string s2 = "World";
 string s = $"{s1} {s2}"; // Hello World
@@ -220,7 +220,7 @@ Common escape characters
 
 The string type is an alias for the String class. Many methods are available in the String class
 
-```C#
+```c#
 string a = "String";
 string b = a.Replace("i", "o"); // Strong
        b = a.Insert(0, "My ");  // My String
@@ -236,7 +236,7 @@ Note that there are no methods for changing a string. Methods that appear to mod
 
 An array is a data structure used for storing a collection of values that all have the same data type. Length of an array cannot be modified.
 
-```C#
+```c#
 int[] x; // integer array
 int[] x = new int[3];
 ```
@@ -244,7 +244,7 @@ int[] x = new int[3];
 When an array is created like above, the elements will automatically be assigned to the default value for that data type, in this case zero.
 
 Arrays are zero indexed (first element is index 0)
-```C#
+```c#
 x[0] = 1;
 x[1] = 2;
 x[2] = 3;
@@ -254,7 +254,7 @@ System.Console.Write(x[0] + x[1] + x[2]); // "6"
 
 We can also use the following shorthand natation
 
-```C#
+```c#
 // values can be assigned all at once by using a curly bracket notation
 int[] y = new int[] { 1, 2, 3 };
 
@@ -266,7 +266,7 @@ int[] z = { 1, 2, 3 };
 
 ### If Statement
 
-```C#
+```c#
 if (x < 1)
   System.Console.Write(x + " < 1");
 else if (x > 1)
@@ -276,7 +276,7 @@ else
 ```
 
 ### Switch Statement
-```C#
+```c#
 switch (x)
 {
   case 0: System.Console.Write(x + " is 0"); break;
@@ -287,7 +287,7 @@ switch (x)
 
 ### Ternary Operator
 
-```C#
+```c#
 d = (d < 0.5) ? 0 : 1;
 ```
 
@@ -295,7 +295,7 @@ d = (d < 0.5) ? 0 : 1;
 
 ### While Loop
 
-```C#
+```c#
 int i = 0;
 while (i < 10) {
   System.Console.Write(i++); // 0-9
@@ -304,7 +304,7 @@ while (i < 10) {
 
 ### Do-While Loop
 
-```C#
+```c#
 int j = 0; do {
   System.Console.Write(j++); // 0-9
 } while (j < 10);
@@ -312,7 +312,7 @@ int j = 0; do {
 
 ### For Loop
 
-```C#
+```c#
 for (int k = 0; k < 10; k++) {
   System.Console.Write(k); // 0-9
 }
@@ -320,7 +320,7 @@ for (int k = 0; k < 10; k++) {
 
 ### Foreach Loop
 
-```C#
+```c#
 int[] a = { 1, 2, 3 };
 foreach (int m in a) {
   System.Console.Write(m); // "123"
@@ -331,7 +331,7 @@ foreach (int m in a) {
 
 The break keyword ends the loop structure, and continue skips the rest of the current iteration and continues at the start of the next iteration.
 
-```C#
+```c#
 for (int n = 0; n < 10; n++) {
   if (n == 5) break; // end loop
   if (n == 3) continue; // start next iteration
@@ -347,7 +347,7 @@ Methods are reusable code blocks that will only execute when called.
 
 A method can be created inside a class by typing void followed by the method’s name, a set of parentheses, and a code block.
 
-```C#
+```c#
 class MyApp {
   void Print()
   {
@@ -359,7 +359,7 @@ class MyApp {
 
 ### Calling Methods
 
-```C#
+```c#
 class MyApp {
   static void Main()
   {
@@ -376,13 +376,13 @@ class MyApp {
 
 ### Method Parameters
 
-```C#
+```c#
 void MyPrint(string s1, string s2)
 {
   System.Console.WriteLine(s1 + s2);
 }
 ```
-```C#
+```c#
 static void Main()
 {
   MyApp m = new MyApp();
@@ -395,7 +395,7 @@ static void Main()
 
 It is possible to declare multiple methods with the same name as long as the parameters vary in type or number.
 
-```C#
+```c#
 void Print(string s)
 {
   System.Console.WriteLine(s);
@@ -410,7 +410,7 @@ void Print(int i)
 
 A method can return a value by replacing void with the data type that the method will return, and a return statement is added.
 
-```C#
+```c#
 string GetPrint()
 {
   return "Hello";
