@@ -57,11 +57,20 @@ namespace MyNamespace
 * Assemblies take the form of executable (.exe) or dynamic link library(.dll) files
 * In C#, each project is a different assembly
 
-## Exception Handling
-
 ## Constants
 
+A variable in C# can be made into a compile-time constant by adding the const keyword before the data type.
+
+```c#
+static void Main()
+{
+  const int a = 10; // compile-time constant
+}
+```
+
 ## Collections
+
+## Exception Handling
 
 ## Sorting
 
