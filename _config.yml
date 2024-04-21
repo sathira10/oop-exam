@@ -1,2 +1,3 @@
 kramdown:
   toc_levels: 2..6
+highlighter: rouge
