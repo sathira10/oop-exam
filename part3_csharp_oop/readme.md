@@ -132,16 +132,16 @@ Every class member has an accessibility level that determines where the member w
 
 When selecting an access level, it is generally best to use the most restrictive level possible. Object members are private by default.
 
-### Private Access
+* **Private Access** - 
 Accessible in the class in which they are declared, the defining class.
 
-### Protected Access
+* **Protected Access** -
 A protected member can be accessed from within a derived class, but it is inaccessible from any other classes.
 
-### Internal Access
+* **Internal Access** - 
 An internal member can be accessed anywhere within the local assembly, but not from another assembly. An assembly is the compilation unit of a .NET project, either an executable program (.exe) or a library (.dll).
 
-### Public Access
+* **Public Access** - 
 The public modifier gives unrestricted access from anywhere that a member can be referenced.
 
 
@@ -284,9 +284,10 @@ Square s3 = (Square)r2; // error
 
 ```
 
-C# allows for a variable of value type to be implicitly converted into a reference type of the Object class.
 
-This operation is known as boxing, and once the value has been copied into the object, it is seen as a reference type.
+### Boxing and Unboxing
+
+C# allows for a variable of value type to be implicitly converted into a reference type of the Object class. This operation is known as boxing, and once the value has been copied into the object, it is seen as a reference type.
 
 Unboxing converts the boxed value back into a variable of its value type. The unboxing operation must be explicit. If the object is not unboxed into the correct type, a **runtime** error will occur.
 
