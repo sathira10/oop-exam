@@ -2,11 +2,11 @@
 
 ## Programming Languages
 
-> High Level Language > Assembly Language > Hardware Language
-
 * **High level languages** - Java, C, C#, C++, Python, etc.
 * **Assembly language** (also called Machine Code)
 * **Hardware language** - bits (1s and 0s)
+
+> High Level Language > Assembly Language > Hardware Language
 
 There are 2 types of high level code
 1. **Native Code** *(C, C++)* - directly compiled into Assembly language
