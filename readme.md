@@ -1,4 +1,4 @@
-# Short Note for OOP with C#
+# Notes for OOP with C#
 
 > MSc IT Jan 2024
 
