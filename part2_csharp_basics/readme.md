@@ -81,7 +81,7 @@ The opposite (narrowing) does not happen automatically.
 
 Has to be used when conversion is not supported implicitly.
 
-```C#
+```c#
 int a = 18.7; // ERROR
 int a = (int)18.7; // a = 18
 ```
