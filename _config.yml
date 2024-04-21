@@ -1,3 +1,4 @@
 kramdown:
   toc_levels: 2..6
+  input: GFM
   syntax_highlighter: rouge
