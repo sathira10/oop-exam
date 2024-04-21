@@ -49,7 +49,7 @@
 
 ### Type Conversion
 
-#### **Implicit Conversion**
+#### Implicit Conversion
 
 Happens automatically when one data type is assigned to another data type that is **capable of representing it without data loss**
 
@@ -77,7 +77,7 @@ double result = num / den;
 
 The opposite (narrowing) does not happen automatically.
 
-#### **Explicit Conversion (Casting)**
+#### Explicit Conversion (Casting)
 
 Has to be used when conversion is not supported implicitly.
 

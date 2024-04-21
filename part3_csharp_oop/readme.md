@@ -1,5 +1,8 @@
 # Object Oriented Programming
 
+* TOC
+{:toc}
+
 ## Objects and Classes
 
 A class is a template used to create objects.
