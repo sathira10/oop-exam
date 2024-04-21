@@ -40,11 +40,16 @@
 
     public class Reservation
     {
-        public Booking Schedule { get; private set; }
+        
+        Booking schedule;
+
+        public Booking Schedule {
+            get { return schedule; }
+        }
 
         public Reservation(Booking schedule)
         {
-            Schedule = schedule;
+            this.schedule = schedule;
         }
     }
 }
