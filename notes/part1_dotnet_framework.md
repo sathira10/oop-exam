@@ -41,4 +41,4 @@ class Program
 ```
 * C# programs in Visual Studio are structured as "solutions"
 * Each solution can have multiple "projects"
-* Every individual project becomes it's own assembly (`.dll`)
+* Every individual project becomes it's own assembly

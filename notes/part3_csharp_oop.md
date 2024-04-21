@@ -84,7 +84,7 @@ The default constructor will instantiate the object and set each field to its de
 
 ### This Keyword
 
-This keyword is a reference to the current instance of the class. Can be used inside the constructor or other methods.
+`this` keyword is a reference to the current instance of the class. Can be used inside the constructor or other methods.
 
 ```c#
 class Rectangle
@@ -99,7 +99,7 @@ class Rectangle
 ```
 
 ### Constructor Overloading
-Constructor can be overloaded like any other method
+Constructors can be overloaded like any other method
 
 ```c#
 class Rectangle
