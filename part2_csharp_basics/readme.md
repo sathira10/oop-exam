@@ -158,7 +158,7 @@ bool b = (true && false); // logical and (false)
      b = !(true);         // logical not (false)
 ```
 
-### Operator Precedents
+### Operator Precedence
 1. increment, decrement, not (`++` `--` `!`)
 2. multiplication, division, modulus (`*` `/` `%`)
 3. addition, subtraction (`+` `-`)
@@ -254,7 +254,7 @@ x[0] = 1;
 x[1] = 2;
 x[2] = 3;
 
-System.Console.Write(x[0] + x[1] + x[2]); // "6"
+Console.Write(x[0] + x[1] + x[2]); // "6"
 ```
 
 We can also use the following shorthand natation
@@ -269,24 +269,27 @@ int[] z = { 1, 2, 3 };
 
 ## Conditionals
 
+
+Conditional statements are used to execute different code blocks based on different conditions.
+
 ### If Statement
 
 ```c#
 if (x < 1)
-  System.Console.Write(x + " < 1");
+  Console.Write(x + " < 1");
 else if (x > 1)
-  System.Console.Write(x + " > 1");
+  Console.Write(x + " > 1");
 else
-  System.Console.Write(x + " == 1");
+  Console.Write(x + " == 1");
 ```
 
 ### Switch Statement
 ```c#
 switch (x)
 {
-  case 0: System.Console.Write(x + " is 0"); break;
-  case 1: System.Console.Write(x + " is 1"); break;
-  default: System.Console.Write(x + " is >1"); break;
+  case 0: Console.Write(x + " is 0"); break;
+  case 1: Console.Write(x + " is 1"); break;
+  default: Console.Write(x + " is >1"); break;
 }
 ```
 
@@ -298,12 +301,14 @@ d = (d < 0.5) ? 0 : 1;
 
 ## Loops
 
+A loop is a method of structuring statements so that they are repeated under certain conditions
+
 ### While Loop
 
 ```c#
 int i = 0;
 while (i < 10) {
-  System.Console.Write(i++); // 0-9
+  Console.Write(i++); // 0-9
 }
 ```
 
@@ -311,7 +316,7 @@ while (i < 10) {
 
 ```c#
 int j = 0; do {
-  System.Console.Write(j++); // 0-9
+  Console.Write(j++); // 0-9
 } while (j < 10);
 ```
 
@@ -319,16 +324,18 @@ int j = 0; do {
 
 ```c#
 for (int k = 0; k < 10; k++) {
-  System.Console.Write(k); // 0-9
+  Console.Write(k); // 0-9
 }
 ```
 
 ### Foreach Loop
 
+The foreach loop provides an easy way to iterate through arrays and collections.
+
 ```c#
 int[] a = { 1, 2, 3 };
 foreach (int m in a) {
-  System.Console.Write(m); // "123"
+  Console.Write(m); // "123"
 }
 ```
 
@@ -340,7 +347,7 @@ The break keyword ends the loop structure, and continue skips the rest of the cu
 for (int n = 0; n < 10; n++) {
   if (n == 5) break; // end loop
   if (n == 3) continue; // start next iteration
-  System.Console.Write(n); // "0124"
+  Console.Write(n); // "0124"
 }
 ```
 
@@ -356,7 +363,7 @@ A method can be created inside a class by typing void followed by the method’s
 class MyApp {
   void Print()
   {
-    System.Console.WriteLine("Hello World");
+    Console.WriteLine("Hello World");
   }
 }
 ```
@@ -373,18 +380,20 @@ class MyApp {
   }
   void Print()
   {
-    System.Console.WriteLine("Hello World");
+    Console.WriteLine("Hello World");
   }
 }
 ```
 
 
-### Method Parameters
+### Parameters
+
+The parentheses that follow the method name are used to pass arguments to the method. 
 
 ```c#
 void MyPrint(string s1, string s2)
 {
-  System.Console.WriteLine(s1 + s2);
+  Console.WriteLine(s1 + s2);
 }
 ```
 ```c#
@@ -403,11 +412,11 @@ It is possible to declare multiple methods with the same name as long as the par
 ```c#
 void Print(string s)
 {
-  System.Console.WriteLine(s);
+  Console.WriteLine(s);
 }
 void Print(int i)
 {
-  System.Console.WriteLine(i);
+  Console.WriteLine(i);
 }
 ```
 

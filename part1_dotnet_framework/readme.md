@@ -27,6 +27,8 @@ The .NET framework takes managed code a step further
 * **Framework Class Library (FCL)** - It is a common library to all .NET languages with some basic functions. e.g.- `Console.WriteLine` is included in FCL
 
 ## C# Program Structure
+The `Main` method is the entry point for the compiler
+
 
 ```c#
 class Program
@@ -37,8 +39,6 @@ class Program
     }
 }
 ```
-
-* The `Main` method is the entry point for the compiler
 * C# programs in Visual Studio are structured as "solutions"
 * Each solution can have multiple "projects"
 * Every individual project becomes it's own assembly (`.dll`)
