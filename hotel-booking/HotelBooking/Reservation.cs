@@ -40,16 +40,11 @@
 
     public class Reservation
     {
-        
-        Booking schedule;
+        Booking booking;
 
-        public Booking Schedule {
-            get { return schedule; }
-        }
-
-        public Reservation(Booking schedule)
+        public Reservation(Booking booking)
         {
-            this.schedule = schedule;
+            this.booking = booking;
         }
     }
 }
