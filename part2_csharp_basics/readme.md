@@ -1,5 +1,7 @@
 # C# Basics
 
+{:toc}
+
 ## Variables
 
 ### Declaration and Assignment
