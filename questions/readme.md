@@ -30,11 +30,11 @@
 3. How do assignment operators work in C#? Provide examples for += and /=.
 4. What is the order of precedence among arithmetic, logical, and assignment operators in C#?
 5. Evaluate these expressions:
-    a. ((3 + 2) * 5) % 4
-    b. x = 5; y = x++ + ++x;
-    c. !(b >= a) && (a == 5) where a = 5 and b = 3
-    d. int i = 5; int j = i += i *= 10
-    e. (i > j) || (i == 5) if i = 10 and j = 20
+    1. ((3 + 2) * 5) % 4
+    2. x = 5; y = x++ + ++x;
+    3. !(b >= a) && (a == 5) where a = 5 and b = 3
+    4. int i = 5; int j = i += i *= 10
+    5. (i > j) || (i == 5) if i = 10 and j = 20
 
 ## Strings
 1. Explain how implicit conversion works in string concatenation with a non-string type.

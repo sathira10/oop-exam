@@ -3,8 +3,8 @@
 ## Programming Languages
 
 * **High level languages** - Java, C, C#, C++, Python, etc.
-* **Assembly language** (also called Machine Code)
-* **Hardware language** - bits (1s and 0s)
+* **Assembly language** 
+* **Hardware language** - bits (1s and 0s) - also called Machine Code
 
 > High Level Language > Assembly Language > Hardware Language
 
