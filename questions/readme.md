@@ -98,15 +98,15 @@
 
 ## Collections
 1. What is the primary difference between a fixed-size array and a dynamic collection such as a List in C#?
-2. How does the List collection manage its size as elements are added or removed?
-3. Describe the IList interface. What are some of the key methods it defines for managing collections?
+2. ~~How does the List collection manage its size as elements are added or removed?~~
+3. ~~Describe the IList interface. What are some of the key methods it defines for managing collections?~~
 4. In what scenario might you choose to use an ArrayList over a List in C#?
 5. What is boxing and unboxing in the context of ArrayLists, and why is it considered a performance overhead?
 6. How can the use of generic collections like List<T> improve type safety compared to non-generic collections like ArrayList?
 7. Define the purpose of a Dictionary collection in C#. What makes it different from a List?
 8. What are the advantages of using a SortedDictionary<TKey, TValue> over a regular Dictionary<TKey, TValue>?
 9. Give an example of a situation where you would use a Dictionary<TKey, TValue> instead of a List<T>.
-10. How do generic collections in System.Collections.Generic offer better performance than their non-generic counterparts?
+10. ~~How do generic collections in System.Collections.Generic offer better performance than their non-generic counterparts?~~
 
 ## Exception Handling
 1. What is the difference between a runtime error and a compile time error?
