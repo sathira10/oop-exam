@@ -83,7 +83,8 @@
 1. What are value types in C#, and where are they stored? Give examples of C# value types and explain how they are managed in memory.
 2. Describe what reference types are in C#. Explain what happens in memory when a new reference type is created in C#.
 3. Explain what it means to pass a parameter by value in C#. What happens to the original variable if the parameter is modified within the method?
-4. Describe the behavior of passing a reference type by value in C#. How does it differ from passing a value type by value?
+4. ~~Describe the behavior of passing a reference type by value in C#. How does it differ from passing a value type by value?~~
+5. Explain what it means to pass a parameter by reference in C#. What happens to the original variable if the parameter is modified within the method?
 
 ## Garbage Collection
 1. What is the primary purpose of garbage collection in C#?
@@ -92,7 +93,7 @@
 
 ## Namespaces, Assemblies, Constants
 1. What is the purpose of namespaces in C#, and how do they help manage large codebases?
-2. Give an example of how a namespace can be used to resolve naming conflicts between two classes that have the same name but different functionalities.
+2. ~~Give an example of how a namespace can be used to resolve naming conflicts between two classes that have the same name but different functionalities.~~
 3. How do assemblies contribute to the structure and deployment of a C# application?
 4. Explain the use of the const keyword in C#. What happens if you try to change the value of a constant variable after it has been initialized?
 
