@@ -1,11 +1,12 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Drawing;
 
 namespace Questions
 {
 
 
-	public class StackVsheap
+	public class StackVsHeap
 	{
         // Method to try modifying an integer value
         public static void ModifyValue(int val)
@@ -24,9 +25,16 @@ namespace Questions
 
     }
 
-    public class SampleObject
+    public class SampleObject : IComparable<SampleObject>
     {
         public int Value { get; set; }
+
+        public int CompareTo(SampleObject? other)
+        {
+            //return (int)Value - other.Value;
+            return Value.CompareTo(other.Value);
+
+        }
     }
 }
 

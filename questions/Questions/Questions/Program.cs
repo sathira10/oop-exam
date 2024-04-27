@@ -82,10 +82,88 @@ class Program
         //Console.WriteLine(s == null);
         //myDictionary.ContainsKey(3);
 
-        double d = 98.5;
-        int i = Convert.ToInt32(d);
-        Console.WriteLine(i);
+        //double d = 98.5;
+        //int i = Convert.ToInt32(d);
+        //Console.WriteLine(i);
+
+
+        // List<int> ages = new List<int>() { 23, 99, 34, 45, 65, 00 };
+
+        //foreach (int age in ages)
+        //{
+        //    Console.WriteLine(age);
+        //}
+
+        //ages.Sort();
+        //Console.WriteLine("\n");
+
+
+        //foreach (int age in ages)
+        //{
+        //    Console.WriteLine(age);
+        //}
+
+        //List<SampleObject> sampleObjects = new();
+        //sampleObjects.Add(new SampleObject { Value = 99 });
+        //sampleObjects.Add(new SampleObject { Value = 44 });
+        //sampleObjects.Add(new SampleObject { Value = 10 });
+        //sampleObjects.Add(new SampleObject { Value = 45 });
+        //sampleObjects.Add(new SampleObject { Value = 78 });
+
+        //foreach (SampleObject obj in sampleObjects)
+        //{
+
+        //    Console.WriteLine(obj.Value);
+        //}
+
+        //sampleObjects.Sort();
+
+        //Console.WriteLine("\n");
+        //foreach (SampleObject obj in sampleObjects)
+        //{
+        //    Console.WriteLine(obj.Value);
+        //}
+
+
+        //Rectangle r = new Rectangle();
+        //Rectangle r = new Rectangle(2);
+        //Rectangle r3 = new Rectangle(2, 3);
+        ////Console.WriteLine(r.x);
+
+        ////Console.WriteLine(Rectangle.count);
+        //Console.WriteLine(Rectangle.count);
+
+
+        //Console.WriteLine(Math.Sin(84));
+
+        bool isValidInput = false;
+        while (!isValidInput)
+        {
+            Console.Write("Enter a double: ");
+            string userInput = Console.ReadLine();
+            try
+            {
+                double number = Convert.ToDouble(userInput);
+                Console.WriteLine("You entered: " + number);
+                isValidInput = true;
+            }
+            catch (FormatException ex)
+            {
+                Console.WriteLine("Format Exception: " + ex.Message + " Please try again.");
+            }
+            catch (OverflowException ex)
+            {
+                Console.WriteLine("Overflow Exception: " + ex.Message + " Please try again.");
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("An unexpected error occurred. Please try again.");
+            }
+
+            Console.WriteLine("Exiting the Program");
+        }
     }
+
 
 
 }

@@ -49,7 +49,7 @@
 4. Discuss the implications of the immutability of array size in C# and how it affects the management of collections of data.
 5. Questions from Array syntax
 
-> **conditionals**, *loops*, and *methods* parts probably will have code questions, from the syntax
+> *conditionals*, *loops*, and *methods* parts probably will have code questions, from the syntax
 
 # Part 3: OOP
 
@@ -123,7 +123,7 @@
 2. What role does the CompareTo method play in the sorting process of a List<T> in C#?
 3. Describe the contract specified by the IComparable<T> interface. What must a class implement to satisfy this contract?
 4. Provide an example of a custom class that implements the IComparable<T> interface to allow its objects to be sorted using the List<T>'s Sort method.
-5. Discuss how you can customize the sorting behavior of a List<T> that contains objects of a class which implements IComparable<T>.
+5. ~~Discuss how you can customize the sorting behavior of a List<T> that contains objects of a class which implements IComparable<T>.~~
 
 ## Streams and Files
 1. What is a stream in the context of C# programming?
