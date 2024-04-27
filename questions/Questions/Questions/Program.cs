@@ -203,6 +203,19 @@ class Program
         //Console.WriteLine(x++ + ++x); //12
         //Console.WriteLine(x);
 
+        // Initialize a string
+        string originalString = "Hello";
+
+        // Append to the original string
+        string modifiedString = originalString + ", World!";
+
+        // Display both strings
+        Console.WriteLine("Original String: " + originalString);
+        Console.WriteLine("Modified String: " + modifiedString);
+
+        // Check if they refer to the same object
+        Console.WriteLine((ReferenceEquals(originalString, modifiedString))); // FALSE
+
 
     }
 
