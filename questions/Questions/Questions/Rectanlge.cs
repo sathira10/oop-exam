@@ -17,7 +17,7 @@ namespace Questions
 
    class Square : Rectangle
    {
-       public override int GetArea() { return x * x; }
+       public int GetArea() { return x * x; }
    }
 }
 

@@ -46,7 +46,7 @@ class Program
 
 
 
-        int[] x = new int[3];
+        //int[] x = new int[3];
         //x[8] = 8;
 
         ////x[0] = 1;
@@ -136,35 +136,75 @@ class Program
 
         //Console.WriteLine(Math.Sin(84));
 
-        bool isValidInput = false;
-        while (!isValidInput)
-        {
-            Console.Write("Enter a double: ");
-            string userInput = Console.ReadLine();
-            try
-            {
-                double number = Convert.ToDouble(userInput);
-                Console.WriteLine("You entered: " + number);
-                isValidInput = true;
-            }
-            catch (FormatException ex)
-            {
-                Console.WriteLine("Format Exception: " + ex.Message + " Please try again.");
-            }
-            catch (OverflowException ex)
-            {
-                Console.WriteLine("Overflow Exception: " + ex.Message + " Please try again.");
-            }
-            catch (Exception)
-            {
-                Console.WriteLine("An unexpected error occurred. Please try again.");
-            }
+        //bool isValidInput = false;
+        //while (!isValidInput)
+        //{
+        //    Console.Write("Enter a double: ");
+        //    string userInput = Console.ReadLine();
+        //    try
+        //    {
+        //        double number = Convert.ToDouble(userInput);
+        //        Console.WriteLine("You entered: " + number);
+        //        isValidInput = true;
+        //    }
+        //    catch (FormatException ex)
+        //    {
+        //        Console.WriteLine("Format Exception: " + ex.Message + " Please try again.");
+        //    }
+        //    catch (OverflowException ex)
+        //    {
+        //        Console.WriteLine("Overflow Exception: " + ex.Message + " Please try again.");
+        //    }
+        //    catch (Exception)
+        //    {
+        //        Console.WriteLine("An unexpected error occurred. Please try again.");
+        //    }
 
-            Console.WriteLine("Exiting the Program");
-        }
+        //    Console.WriteLine("Exiting the Program");
+        //}
+
+        // Operators
+
+
+        Console.WriteLine(((3 + 2) * 5) % 4);
+
+        int x = 5; int y = x++ + ++x;
+        Console.WriteLine(y);
+
+        int a = 5, b = 3;
+        Console.WriteLine(!(b >= a) && (a == 5));
+
+        int i = 5;
+        int j = i += i *= 10;
+        Console.WriteLine(j);
+
+        i = 10; j = 20;
+        Console.WriteLine((i > j) || (i == 5));
+
+        //int x, y;
+
+        //x = 5; y = x++; // y=5, x=6
+        //Console.WriteLine(x + " " + y);
+
+        //x = 5; y = ++x; // y=6, x=6
+        //Console.WriteLine(x + " " + y);
+
+        //x = 5;
+        //Console.WriteLine(++x); //6
+
+        //x = 5;
+        //Console.WriteLine(x++); //5
+
+        //x = 5;
+        //Console.WriteLine(++x + x++); //12
+        //Console.WriteLine(x);
+
+        //x = 5;
+        //Console.WriteLine(x++ + ++x); //12
+        //Console.WriteLine(x);
+
+
     }
-
-
 
 }
 
